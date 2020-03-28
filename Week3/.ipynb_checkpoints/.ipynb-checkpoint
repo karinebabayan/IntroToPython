@@ -1,0 +1,429 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Lists\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Values: hi\n",
+      "list1 ['hello', 1, True, 'hi']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem1\n",
+    "list1 =  ['hello', 1, True] \n",
+    "list1.append(input('Values: '))\n",
+    "print('list1', list1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Values: wee\n",
+      "['hello', 1, True]\n",
+      "['hello', 1, True, 'wee']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem2\n",
+    "list1 =  ['hello', 1, True] \n",
+    "list_new = list1.copy()\n",
+    "list_new.append(input('Values: '))\n",
+    "print(list1)\n",
+    "print(list_new)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Value: 4\n",
+      "list2:  [1, 6, 4, 4, 5, 7, 9, 11, 2, 4]\n",
+      "Number of 2s:  3\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem3\n",
+    "list2 = [1, 6, 4, 4, 5, 7, 9, 11, 2]\n",
+    "value = int(input('Value: '))\n",
+    "list2.append(value)\n",
+    "print('list2: ',list2)\n",
+    "print ('Number of 2s: ', list2.count(value))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Value: 10\n",
+      "list4 before:  [1, 3, 4, 5, 'hello', 10, 'a', 3]\n",
+      "list4 after:  [1, 3, 4, 5, 'hello', 'a', 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem4\n",
+    "list4 = [1, 3, 4, 5, 'hello', 10, 'a', 3]\n",
+    "value = int(input('Value: '))\n",
+    "print('list4 before: ', list4)\n",
+    "list4.remove(value) \n",
+    "print('list4 after: ', list4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List before del: [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "List after del: [2, 3, 4, 7, 8, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem5\n",
+    "list5 = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+    "print('List before del:', list5)\n",
+    "del list5[5]\n",
+    "del list5[4]\n",
+    "del list5[0]\n",
+    "print('List after del:', list5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List before del: [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "List after del: [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "List after del: [2, 3, 4, 7, 8, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem6\n",
+    "list5 = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+    "print('List before del:', list5)\n",
+    "new_list5 = list5.copy()\n",
+    "del new_list5[5]\n",
+    "del new_list5[4]\n",
+    "del new_list5[0]\n",
+    "print('List after del:', list5)\n",
+    "print('List after del:', new_list5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "l1 old:  ['a', 3, 'c', 5, 'hello', 10, 'me', 7]\n",
+      "7\n",
+      "ls new:  ['a', 3, 'c', 5, 'hello', 10, 'me', 7]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem7\n",
+    "l1 = ['a', 3, 'c', 5, 'hello', 10, 'me', 7]\n",
+    "l2 = [1, 'b', 4, 'd', 2, 10, 'a', 8]\n",
+    "print('l1 old: ',l1)\n",
+    "print (l2.index(8))\n",
+    "#nayelnoric\n",
+    "print('ls new: ', l1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Sets"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "value:45\n",
+      "{1, 4, 7, 'buy', '45', 'WE', 'a'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem8\n",
+    "set1 =  {1,'a',4,'buy',7,'WE',7, True, 7}\n",
+    "set1.add(input('value:'))\n",
+    "print(set1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 7, 'vintage', 7852, 4587, 'movie', 'action', 789}\n",
+      "1\n",
+      "{7, 'vintage', 7852, 4587, 'movie', 'action', 789}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem9\n",
+    "set2 = {1,'vintage',4587,'movie',7852,7, 'action', 789}\n",
+    "print(set2)\n",
+    "a= int(input())\n",
+    "set2.remove(a)\n",
+    "print(set2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 7, 'vintage', 7852, 4587, 'movie', 'action', 789}\n",
+      "4587\n",
+      "{1, 7, 'vintage', 7852, 'movie', 'action', 789}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem10\n",
+    "set2 = {1,'vintage',4587,'movie',7852,7, 'action', 789}\n",
+    "print(set2)\n",
+    "a= int(input())\n",
+    "set2.discard(a)\n",
+    "print(set2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 7, 712, 'vintage', 7852, 4587, 78, 'movie', 65265, 'clock', 'action', 789, 123}\n",
+      "{'movie', 1, 4587, 789}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem11\n",
+    "set1 = {1,'vintage',4587,'movie',7852,7, 'action', 789}\n",
+    "set2 = {78,123, 65265,4587, 789, 'movie', 712, 1, 'clock'}\n",
+    "print(set1.union(set2))\n",
+    "print(set1.intersection(set2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Number: 0\n",
+      ":(\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem12\n",
+    "set3 = {1,2,4,2,2,5,6,7,5,56}\n",
+    "a = int(input('Number: '))\n",
+    "if a>=min(set3) and a<=max(set3):\n",
+    "    print( ':)')\n",
+    "else:\n",
+    "    print (':(')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Tuples"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('k', 'n', 'oce', 1, 2, 4, 2, 2, 5, 6, 7, 5, 56)\n",
+      "2 6\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem13\n",
+    "\n",
+    "t1 = ('k','n','oce',1, 2,4,2,2,5,6,7,5,56)\n",
+    "print(t1)\n",
+    "print(t1[4],t1[-4])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('afaf', 2548, 'clone', 54, 'a', 36358, 'bee', True, 45, 5841, 'str')\n",
+      "('afaf', 2548, 'clone', 54, 'hello', 36358, 'bee', True, 45, 5841, 'str')\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem14\n",
+    "t2 = ('afaf',2548, 'clone',54,'a',36358,'bee',True,45, 5841,'str')\n",
+    "print(t2)\n",
+    "new_t2= list(t2)\n",
+    "new_t2[4] = 'hello'\n",
+    "t2 = tuple(new_t2)\n",
+    "print(t2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Dictionaries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'key1': 'coke', 'key2': 'fanta'}\n",
+      "Key: key3\n",
+      "Value: nestea\n",
+      "{'key1': 'coke', 'key2': 'fanta', 'key3': 'nestea'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem15\n",
+    "dict1 = {'key1':'coke','key2':'fanta'}\n",
+    "print(dict1)\n",
+    "key= input('Key: ')\n",
+    "value = input('Value: ')\n",
+    "dict1[key]=value\n",
+    "print(dict1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1: 'a', 2: 'b', 3: 'c'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#problem16\n",
+    "l1 =  [(1, 'a'), (2,'b'), (3, 'c')]\n",
+    "d1 = dict(l1)\n",
+    "print(d1)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
