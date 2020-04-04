@@ -8,7 +8,8 @@ print ('Month: ', bday.month)
 print ('Day: ', bday.day)
 print ('Weekday: ', bday.isoweekday())
 next_bday = datetime.date(2021, 2, 21)
-till_bday = next_bday - bday
+today = datetime.date.today()
+till_bday = next_bday - today
 print ('Until my next birthday: ', till_bday)
 cal = calendar.month(2017, 5)
 print (cal)
