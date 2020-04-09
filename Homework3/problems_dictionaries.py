@@ -3,5 +3,6 @@ print('Market before changes: ', market)
 market['candies'] = ['mars', 'kinder', 'twix'] 
 market['fruits'].sort()
 print('Market sorted:', market)
-del market['fruits'][3:5]
+set_market = set(market['fruits'])
+market['fruits'] = list(set_market) 
 print('Market after chhanges: ', market)
