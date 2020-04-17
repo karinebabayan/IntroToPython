@@ -1,8 +1,6 @@
 def calculate_cube(x):
-    isinstance(x,int)
     return(x**3)
 def calculate_square(x):
-    isinstance(x,int)
     return(x**2)
 import pretty_print
 def main():
